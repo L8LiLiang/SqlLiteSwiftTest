@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		212F8BBC1C7D920100692398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BBB1C7D920100692398 /* AppDelegate.swift */; };
-		212F8BBE1C7D920100692398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BBD1C7D920100692398 /* ViewController.swift */; };
 		212F8BC11C7D920100692398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212F8BBF1C7D920100692398 /* Main.storyboard */; };
 		212F8BC31C7D920100692398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212F8BC21C7D920100692398 /* Assets.xcassets */; };
 		212F8BC61C7D920100692398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212F8BC41C7D920100692398 /* LaunchScreen.storyboard */; };
 		212F8BD11C7D920200692398 /* SqLiteTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BD01C7D920200692398 /* SqLiteTest1Tests.swift */; };
 		212F8BDC1C7D920200692398 /* SqLiteTest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BDB1C7D920200692398 /* SqLiteTest1UITests.swift */; };
+		212F8BEA1C7D94F400692398 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BE91C7D94F400692398 /* PlayerCell.swift */; };
+		212F8BEC1C7D95B700692398 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BEB1C7D95B700692398 /* PlayerController.swift */; };
+		212F8BEE1C7D9A0200692398 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 212F8BED1C7D9A0200692398 /* libsqlite3.0.tbd */; };
+		212F8BF41C7DA4FE00692398 /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BF31C7DA4FE00692398 /* UIImage+extension.m */; };
+		212F8BF61C7DAA5900692398 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F8BF51C7DAA5900692398 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		212F8BB81C7D920100692398 /* SqLiteTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqLiteTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		212F8BBB1C7D920100692398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		212F8BBD1C7D920100692398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		212F8BC01C7D920100692398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		212F8BC21C7D920100692398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212F8BC51C7D920100692398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 		212F8BD71C7D920200692398 /* SqLiteTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqLiteTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		212F8BDB1C7D920200692398 /* SqLiteTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqLiteTest1UITests.swift; sourceTree = "<group>"; };
 		212F8BDD1C7D920200692398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212F8BE91C7D94F400692398 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		212F8BEB1C7D95B700692398 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		212F8BED1C7D9A0200692398 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		212F8BF11C7DA4FD00692398 /* SqLiteTest1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqLiteTest1-Bridging-Header.h"; sourceTree = "<group>"; };
+		212F8BF21C7DA4FE00692398 /* UIImage+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+extension.h"; sourceTree = "<group>"; };
+		212F8BF31C7DA4FE00692398 /* UIImage+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extension.m"; sourceTree = "<group>"; };
+		212F8BF51C7DAA5900692398 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212F8BEE1C7D9A0200692398 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,7 @@
 		212F8BAF1C7D920100692398 = {
 			isa = PBXGroup;
 			children = (
+				212F8BED1C7D9A0200692398 /* libsqlite3.0.tbd */,
 				212F8BBA1C7D920100692398 /* SqLiteTest1 */,
 				212F8BCF1C7D920200692398 /* SqLiteTest1Tests */,
 				212F8BDA1C7D920200692398 /* SqLiteTest1UITests */,
@@ -98,11 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				212F8BBB1C7D920100692398 /* AppDelegate.swift */,
-				212F8BBD1C7D920100692398 /* ViewController.swift */,
+				212F8BEB1C7D95B700692398 /* PlayerController.swift */,
+				212F8BF51C7DAA5900692398 /* Player.swift */,
 				212F8BBF1C7D920100692398 /* Main.storyboard */,
+				212F8BE91C7D94F400692398 /* PlayerCell.swift */,
 				212F8BC21C7D920100692398 /* Assets.xcassets */,
 				212F8BC41C7D920100692398 /* LaunchScreen.storyboard */,
 				212F8BC71C7D920100692398 /* Info.plist */,
+				212F8BF21C7DA4FE00692398 /* UIImage+extension.h */,
+				212F8BF31C7DA4FE00692398 /* UIImage+extension.m */,
+				212F8BF11C7DA4FD00692398 /* SqLiteTest1-Bridging-Header.h */,
 			);
 			path = SqLiteTest1;
 			sourceTree = "<group>";
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212F8BBE1C7D920100692398 /* ViewController.swift in Sources */,
+				212F8BEA1C7D94F400692398 /* PlayerCell.swift in Sources */,
 				212F8BBC1C7D920100692398 /* AppDelegate.swift in Sources */,
+				212F8BEC1C7D95B700692398 /* PlayerController.swift in Sources */,
+				212F8BF61C7DAA5900692398 /* Player.swift in Sources */,
+				212F8BF41C7DA4FE00692398 /* UIImage+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SqLiteTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elane.SqLiteTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SqLiteTest1/SqLiteTest1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SqLiteTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elane.SqLiteTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SqLiteTest1/SqLiteTest1-Bridging-Header.h";
 			};
 			name = Release;
 		};
